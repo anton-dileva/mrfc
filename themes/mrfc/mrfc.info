@@ -1,6 +1,6 @@
 name = Miramar Rangers Football Club
 description = Theme created for the Miramar Rangers Football Club. This theme is a starterkit of Mothership.
-screenshot = screenshot.jpg
+screenshot = screenshot.png
 engine = phptemplate
 core = 7.x
 php = 5.2

@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/sites/mrfc.localhost/libraries/ckeditor/';
