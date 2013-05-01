@@ -139,11 +139,23 @@ figure {
 }
 
 .header-region ul {
-
+  float: left;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.header-region nav {
+  float: left;
+  background-color: #172145;
 }
 .header-region ul li {
   float: left;
-  border-right: 1px solid #000;
+  display: inline;
+  border-right: 1px solid #fff;
+  margin: 0;
+  padding: 0;
 }
 .header-region ul li a {
   text-transform: uppercase;
@@ -153,9 +165,11 @@ figure {
   display: block;
   text-align: center;
   font-weight: bold;
+  color: #fff;
 }
 .header-region ul li.last {
   border:none;
+  padding-right: 2px;
 }
 
 
@@ -168,6 +182,16 @@ footer {
 footer .footer-block {
   width: 940px;
   margin: 0 auto;
+  border-bottom: 3px solid #fff;
+}
+footer .footer-menu {
+  float: left;
+  width: 370px;
+  margin: 55px 20px 0 15px;
+}
+footer .footer-menu ul {
+  float: left;
+  width: 80px;
 }
 footer .footer-menu ul li {
   float: left;
@@ -192,7 +216,7 @@ footer .footer-logo {
 
 /* --- 0. Admin ------------ */
 
-.tabs {
+.tabs.primary {
   width: 940px;
   list-style: none;
   padding: 0;
@@ -200,12 +224,13 @@ footer .footer-logo {
   display: block;
   overflow: hidden;
   border-bottom: 1px solid #bbb;
+  line-height: 25px;
 }
-.tabs li{
+.tabs.primary li{
   float: left;
   margin: 0 10px 0 0;
 }
-.tabs li a {
+.tabs.primary li a {
   display: block;
   border:1px solid #bbb;
   border-bottom: none;

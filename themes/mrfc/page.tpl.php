@@ -12,6 +12,7 @@
 
 <header role="banner">
   <div class="siteinfo">
+    <div class="top-strip"></div>
     <?php if ($logo): ?>
       <figure>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">
