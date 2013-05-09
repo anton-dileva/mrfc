@@ -78,6 +78,7 @@ body {
   font-size:13px;
   line-height:25px;
   background:#ffffff;
+  height: auto;
 }
 strong { font-weight: bold; }
 em { font-style:italic; }
@@ -133,6 +134,10 @@ header {
 figure {
   width: 230px;
   margin: 0 auto;
+}
+figure a {
+  display: block;
+  height: 320px;
 }
 .header-region {
 
@@ -229,6 +234,7 @@ footer .footer-logo {
 .tabs.primary li{
   float: left;
   margin: 0 10px 0 0;
+  padding: 0;
 }
 .tabs.primary li a {
   display: block;
@@ -236,4 +242,17 @@ footer .footer-logo {
   border-bottom: none;
   padding: 6px 20px 4px 20px;
   text-decoration: none;
+  margin: 0;
 }
+ul.primary li.active a { 
+  background-color: #ddd;
+  border-bottom: none;
+  font-weight: normal;
+}
+
+
+
+
+
+
+
