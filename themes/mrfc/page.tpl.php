@@ -43,7 +43,7 @@
 
 <div class="page">
 
-  <div role="main" id="#main-content">
+  <div role="main" id="main-content">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
       <h1><?php print $title; ?></h1>

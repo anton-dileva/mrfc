@@ -77,7 +77,7 @@ body {
   font-family: arial, helvetica, sans-serif;
   font-size:13px;
   line-height:25px;
-  background:#ffffff;
+  background:#172145;
   height: auto;
 }
 strong { font-weight: bold; }
@@ -120,16 +120,19 @@ li {
 
 /* --- 2. Layout ------------ */
 .page {
-  width: 940px;
+  width: 938px;
   margin: 0 auto;
   clear: both;
+  background: #fff;
+  box-shadow: 0px 0px 60px #000;
 }
 
 /* --- 2a. Header ------------ */
 header {
-  width: 940px;
+  width: 938px;
   margin: 0 auto;
   background-color: #172145;
+  box-shadow: 0px 0px 60px #000;
 }
 figure {
   width: 230px;
@@ -139,8 +142,8 @@ figure a {
   display: block;
   height: 320px;
 }
-.header-region {
-
+ .siteinfo {
+   background: url('../images/banner.png') no-repeat;
 }
 
 .header-region ul {
@@ -154,6 +157,7 @@ figure a {
 .header-region nav {
   float: left;
   background-color: #172145;
+  box-shadow: 0px 0px 60px #000;
 }
 .header-region ul li {
   float: left;
@@ -164,7 +168,7 @@ figure a {
 }
 .header-region ul li a {
   text-transform: uppercase;
-  padding: 14px 19px 14px 19px;
+  padding: 14px 18.7px 14px 19px;
   font-size: 20px;
   line-height: 14px;
   display: block;
@@ -185,44 +189,146 @@ footer {
   border-top: 25px solid #000;
 }
 footer .footer-block {
-  width: 940px;
+  width: 938px;
   margin: 0 auto;
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #636a84;
 }
 footer .footer-menu {
   float: left;
-  width: 370px;
+  width: 470px;
   margin: 55px 20px 0 15px;
 }
 footer .footer-menu ul {
   float: left;
-  width: 80px;
+  /*width: 80px;*/
 }
 footer .footer-menu ul li {
   float: left;
+  width: 85px;
+  margin-right:25px;
 }
 footer .footer-menu ul li a {
-  margin-right: 15px;
   font-size: 14px;
   display: block;
-  text-align: center;
   text-transform: uppercase;
   color: #fff;
 }
 footer .footer-logo {
-  /*float: right;*/
+  margin: 0 0 50px 0;
+}
+footer .view-id-sponsors {
+  width: 940px;
+  margin: 25px auto 85px auto;
+}
+footer .copyright-statement {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000;
+  padding: 5px 0 10px 0;
+  border-top: 5px solid #636a84;
+}
+footer .copyright-statement p {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
 }
 
 /* --- 3. Content ---------- */
 
+.front #main-content {
+  padding: 0;
+  margin: 0;
+}
+
+#main-content {
+  padding: 15px;
+}
+
+
 /* ----3a. Homepage -------- */
 
+.front .intro-text {
+  width: 600px;
+  margin: 0 40px;
+}
+.front .intro-text h1 {
+  display: inline;
+}
+.front .buttons {
+  width: 225px;
+  margin-right: 35px;
+}
+.front .buttons .latest-newsletters-button,
+.front .buttons .registrations-button,
+.front .buttons .results-tables-button {
+  display: block;
+  float: left;
+  width: 220px;
+}
+.front .buttons .latest-newsletters-button a,
+.front .buttons .registrations-button a,
+.front .buttons .results-tables-button a {
+  width: 200px;
+  display: block;
+  font-size: 18px;
+  padding: 5px 10px;
+  margin: 7px 0;
+  text-align: center;
+  background: #dedede;
+  background: -moz-linear-gradient(top, #dedede 0%, #fefefe 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dedede), color-stop(100%,#fefefe));
+  background: -webkit-linear-gradient(top, #dedede 0%,#fefefe 100%);
+  background: -o-linear-gradient(top, #dedede 0%,#fefefe 100%);
+  background: -ms-linear-gradient(top, #dedede 0%,#fefefe 100%);
+  background: linear-gradient(to bottom, #dedede 0%,#fefefe 100%);
+  color: #172145;
+  border-radius: 5px;
+  font-weight: bold;
+  text-shadow: 0 1px 1 rgba(0,0,0,.2);
+  box-shadow: 0 1px 0 0 #b1b1b1, 0 -1px 0 0 white;
+}
+.front .social-media {
+  width: 220px;
+  display: block;
+  float: left;
+  margin-bottom: 10px;
+}
+.front .social-media .facebook-icon a,
+.front .social-media .twitter-icon a,
+.front .social-media .instagram-icon a {
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+  width: 35px;
+  height: 36px;
+  float: right;
+  margin-right: 2px;
+}
+.front .social-media .facebook-icon a {
+  background: url('../images/facebook-icon.png') no-repeat;
+}
+.front .social-media .twitter-icon a {
+  background: url('../images/twitter-icon.png') no-repeat;
+}
+.front .social-media .instagram-icon a {
+  background: url('../images/instragram-icon.png') no-repeat;
+}
 /* ----3b. About -------- */
+
+.page-about .about-submenu {
+  margin: 0 40px;
+}
+.page-about .about-submenu a {
+  font-size: 16px;
+  margin-right: 50px;
+}
 
 /* --- 0. Admin ------------ */
 
 .tabs.primary {
-  width: 940px;
+  width: 910px;
   list-style: none;
   padding: 0;
   margin: 0 0 25px 0;
