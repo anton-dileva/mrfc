@@ -135,8 +135,10 @@ header {
   box-shadow: 0px 0px 60px #000;
 }
 figure {
-  width: 230px;
+  width: 265px;
   margin: 0 auto;
+  position: relative;
+  bottom: 30px;
 }
 figure a {
   display: block;
@@ -144,6 +146,13 @@ figure a {
 }
  .siteinfo {
    background: url('../images/banner.png') no-repeat;
+}
+
+.top-strip {
+  display: block;
+  height: 30px;
+  width: 100%;
+  background: url('../images/top-strip.png');
 }
 
 .header-region ul {
