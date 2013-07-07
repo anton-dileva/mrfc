@@ -174,11 +174,15 @@ figure {
 
 }
 .front .siteinfo {
-   background: url('../images/banner-front.png') no-repeat;
+  background: url('../images/banner-front.png') no-repeat;
 }
 
 .siteinfo {
-   background: url('../images/banner.png') no-repeat;
+  background: url('../images/banner.png') no-repeat;
+}
+
+.header-region {
+  position: relative;
 }
 
 .header-region ul {
@@ -218,6 +222,9 @@ figure {
   text-align: center;
   color: #fff;
   font-weight: 500;
+}
+.header-region ul li a.active {
+  background: url('../images/active-menu-icon.png') no-repeat top center;
 }
 .header-region ul li a.active,
 .header-region ul li a:hover {
@@ -345,10 +352,10 @@ footer .copyright-statement p {
   padding: 0;
   margin: 0;
 }
-
-#main-content {
+/* Turn on when styling node pages. */
+/*#main-content {
   padding: 15px;
-}
+}*/
 
 
 /* ----3a. Homepage -------- */
@@ -439,6 +446,7 @@ footer .copyright-statement p {
 .front .slider {
   height: 330px;
   width: 940px;
+  position: relative;
 }
 
 .front .slider .views-field-field-body {
@@ -494,7 +502,7 @@ footer .copyright-statement p {
 
 /* ----3b. About -------- */
 
-.page-about .banner {
+.banner {
   width: 940px;
   height: 285px;
   margin: 0 0 30px 0;
@@ -504,6 +512,7 @@ footer .copyright-statement p {
 .page-about .about-submenu {
   margin: 0 60px 50px 60px;
   padding-bottom: 30px;
+  border-bottom: 2px solid #d2dae2;
 }
 .page-about .about-submenu a {
   font-size: 22px;
@@ -568,6 +577,85 @@ footer .copyright-statement p {
 }
 .page-about .facilities {
   border: none;
+}
+
+/* ----3c News and Events ------------- */
+
+.page-news h2,
+.page-events h2 {
+  font-family: 'Homenaje', sans-serif;
+  font-size: 61px;
+  color: #6b7784;
+  padding: 20px 0 40px 0;
+  border-bottom: 2px solid #d2dae2;
+}
+.page-news .news-view,
+.page-events .events-view {
+  width: 840px;
+  margin: 0 0 40px 50px;
+}
+.page-news .views-row,
+.page-events .views-row {
+  display: inline-block;
+  width: 620px;
+  padding-bottom: 30px;
+  border-bottom: 2px dotted #d2dae2;
+}
+.page-news .views-row-first,
+.page-events .views-row-first {
+  margin-top: 50px;
+}
+.page-news .views-row-last,
+.page-events .views-row-last {
+  border: none;
+}
+.page-news .news-view .news-view-date .day,
+.page-news .news-view .news-view-date .month,
+.page-events .events-view .events-view-start-date .day,
+.page-events .events-view .events-view-start-date .month {
+  width: 35px;
+  height: 22px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.page-news .news-view .news-view-date,
+.page-events .events-view .events-view-start-date {
+  float: left;
+}
+.page-news .news-view .news-view-date .day,
+.page-events .events-view .events-view-start-date .day {
+  background-color: #c4d0db;
+}
+.page-news .news-view .news-view-date .month,
+.page-events .events-view .events-view-start-date .month {
+  background-color: #515873;
+  text-transform: uppercase;
+}
+.page-news .news-view .views-field-title,
+.page-events .events-view .views-field-title {
+  display: block;
+  height: 55px;
+  overflow: hidden;
+  font-family: 'Homenaje', sans-serif;
+  font-size: 61px;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+.page-news .news-view .views-field-title a,
+.page-events .events-view .views-field-title a {
+  display: block;
+  margin-top: 11px;
+}
+.page-news .news-view .views-field-field-summary,
+.page-events .events-view .views-field-field-summary {
+  margin-left: 57px;
+  font-size: 14px;
+}
+.page-news .news-view .views-field-view-node,
+.page-events .events-view .views-field-view-node {
+  float: right;
+  font-size: 14px;
 }
 
 /* --- 0. Admin ------------ */
