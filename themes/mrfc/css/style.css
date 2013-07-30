@@ -131,6 +131,9 @@ ul,ol {}
 li {
   margin-bottom:5px;
 }
+.clear {
+  clear: both;
+}
 
 /* --- 2. Layout ------------ */
 .page {
@@ -656,6 +659,50 @@ footer .copyright-statement p {
 .page-events .events-view .views-field-view-node {
   float: right;
   font-size: 14px;
+}
+
+/* --- 4. Right Sidebar ---- */
+
+.sidebar-second {
+  clear: both;
+}
+.sidebar-second .page #block-block-5,
+.sidebar-second .page #block-block-6 {
+  width: 180px;
+  box-shadow: 0px 0px 30px #6b7784;
+  margin-bottom: 30px;
+}
+.sidebar-second .page #block-block-6 {
+  margin-bottom: 0;
+}
+.sidebar-second .page .title {
+  padding: 20px 0px 0 0px;
+  margin: 0 20px 0px 20px;
+  font-size: 25px;
+  color: #6b7784;
+  border-bottom: 2px solid #172145;
+}
+.sidebar-second .page .block-content {
+  padding: 20px;
+}
+.sidebar-second .page .block-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.sidebar-second .page .block-content .hot-feed,
+.sidebar-second .page .block-content .new-feed {
+  border-bottom: 2px dashed #6b7784;
+  padding: 20px 0;
+}
+.sidebar-second .page .block-content .feed-1 {
+  padding-top: 0;
+}
+.sidebar-second .page .block-content .feed-3 {
+  border: none;
+}
+.sidebar-second .page .block-content .more {
+  font-weight: bold;
 }
 
 /* --- 0. Admin ------------ */
