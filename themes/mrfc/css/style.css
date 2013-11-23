@@ -187,15 +187,12 @@ figure {
 .front .siteinfo {
   background: url('../images/banner-front.png') no-repeat;
 }
-
 .siteinfo {
   background: url('../images/banner.png') no-repeat;
 }
-
 .header-region {
   position: relative;
 }
-
 .header-region ul {
   float: left;
   border-top: 3px solid #fff;
@@ -363,10 +360,9 @@ footer .copyright-statement p {
   padding: 0;
   margin: 0;
 }
-/* Turn on when styling node pages. */
-/*#main-content {
+#main-content {
   padding: 15px;
-}*/
+}
 
 
 /* ----3a. Homepage -------- */

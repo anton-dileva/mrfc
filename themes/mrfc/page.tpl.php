@@ -5,7 +5,7 @@
 //page--[CONTENT TYPE].tpl.php
 ?>
 <?php if( theme_get_setting('mothership_poorthemers_helper') ){ ?>
-<!--page.tpl.php-->
+<!-- page.tpl.php-->
 <?php } ?>
 
 <?php print $mothership_poorthemers_helper; ?>
@@ -49,9 +49,7 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-
-    <!-- Turn breadcrumbs back on after talking to Anton to include in the design. -->
-    <!-- <?php print $breadcrumb; ?> -->
+    <?php print $breadcrumb; ?>
 
     <?php if ($action_links): ?>
       <ul class="action-links"><?php print render($action_links); ?></ul>
@@ -75,7 +73,7 @@
 
     <?php print render($page['content_post']); ?>
 
-  </div><!--/main-->
+  </div><!-- /main-->
 
   <?php if ($page['sidebar_first']): ?>
     <div class="sidebar-first">
@@ -88,7 +86,7 @@
       <?php print render($page['sidebar_second']); ?>
     </div>
   <?php endif; ?>
-</div><!--/page-->
+</div><!-- /page-->
 
 <footer role="contentinfo">
   <?php print render($page['footer']); ?>

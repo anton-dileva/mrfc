@@ -41,12 +41,12 @@
 </header>
 
 <div class="page">
-		    
+        
   <?php $node = menu_get_object();
-  	if(node_is_page($node)) : ?>
-    	<div class="banner-node">
-      	<p><img alt="" src="/sites/mrfc.localhost/themes/mrfc/images/banner-node-news-events.png" style="width: 940px; height: 250px;" /></p>
-    	</div>
+    if(node_is_page($node)) : ?>
+      <div class="banner-node">
+        <p><img alt="" src="/sites/mrfc.localhost/themes/mrfc/images/banner-node-news-events.png" style="width: 940px; height: 250px;" /></p>
+      </div>
   <?php endif; ?>
 
   <div role="main" id="main-content">
