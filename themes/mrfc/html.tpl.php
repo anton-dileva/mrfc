@@ -7,6 +7,7 @@
 <head>
 <title><?php print $head_title; ?></title>
 <?php print $head; ?>
+<link href='http://fonts.googleapis.com/css?family=Exo:500,600|Homenaje' rel='stylesheet' type='text/css'>
 <?php print $appletouchicon; ?>
 <?php if(theme_get_setting('mothership_mobile')){  ?>
 <meta name="MobileOptimized" content="width">

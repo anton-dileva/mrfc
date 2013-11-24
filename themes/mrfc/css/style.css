@@ -10,8 +10,10 @@
       3b. About
       3c. News and Events
         - Nodes
+      3d. Contact
     4. Sidebar
     00. Admin 
+    01. Breadcrumbs
 
    ---------------------------------------------------
     Designer: Anton Di Leva
@@ -89,6 +91,7 @@ html,
 body,
 #container {
   height:100%;
+  min-height: 100%;
 }
 body {
   color:#000;
@@ -296,7 +299,6 @@ figure {
   margin: 40px 45px 40px 0;
 }
 
-
 /* --- 2b. Footer ------------ */
 footer {
   width: 100%;
@@ -333,7 +335,7 @@ footer .footer-logo {
   float: right;
   margin: 0 0 50px 0;
 }
-footer .view-id-sponsors {
+footer .block-views-sponsors-block-1 {
   width: 940px;
   margin: 25px auto 60px auto;
 }
@@ -357,13 +359,14 @@ footer .copyright-statement p {
 /* --- 3. Content ---------- */
 
 .front #main-content {
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 #main-content {
-  padding: 15px;
+  width: 840px;
+  padding: 0 0 40px 50px;
 }
-
 
 /* ----3a. Homepage -------- */
 
@@ -409,7 +412,7 @@ footer .copyright-statement p {
   width: 200px;
   display: block;
   font-size: 18px;
-  padding: 10px 10px 5px 10px;
+  padding: 5px 10px 5px 10px;
   margin: 7px 0;
   text-align: center;
   background: #f8f8f8; /* Old browsers */
@@ -548,9 +551,6 @@ footer .copyright-statement p {
   font-family: 'Homenaje', sans-serif;
   margin-bottom: 25px;
 }
-.page-about .honors-board {
-  width: 840px;
-}
 .page-about .sponsors img {
   margin-bottom: 10px;
 }
@@ -596,11 +596,6 @@ footer .copyright-statement p {
   color: #6b7784;
   padding: 20px 0 40px 0;
   border-bottom: 2px solid #d2dae2;
-}
-.page-news .news-view,
-.page-events .events-view {
-  width: 840px;
-  margin: 0 0 40px 50px;
 }
 .page-news .views-row,
 .page-events .views-row {
@@ -670,63 +665,111 @@ footer .copyright-statement p {
 .banner-node {
   height: 250px;
 }
-.node-type-news #main-content, .node-type-events #main-content {
-    width: 840px;
-    padding: 0 0 40px 50px;
+
+/* --- 3d. Contact ---- */
+
+.node-type-webform .fill-out {
+  width: 370px;
+  float: left;
+  padding-right: 45px;
+  border-right: 2px solid #d2dae2;
+}
+.node-type-webform .contact-info {
+  width: 370px;
+  float: left;
+  padding-left: 45px;
+}
+.node-type-webform .section-1 {
+  float: left;
+  margin-bottom: 50px;
+}
+.node-type-webform .contact-location {
+  width: 450px;
+  float: left;
+}
+.node-type-webform .contact-maps {
+  width: 370px;
+  float: left;
+}
+.node-type-webform .section-2 {
+  width: 100%;
+  clear: both;
+  padding-top: 30px;
+  border-top: 3px dotted #d2dae2;
+  float: left;
+  margin-bottom: 50px;
 }
 
 /* --- 4. Right Sidebar ---- */
 
-.sidebar-second {
+.sidebar-second .page .sidebar-second {
   clear: both;
 }
-.sidebar-second .page #block-block-5,
-.sidebar-second .page #block-block-6 {
+.page .sidebar-second #block-block-5,
+.page .sidebar-second #block-block-6,
+.page .sidebar-second #block-views-categories-block,
+.page .sidebar-second #block-views-categories-block-1  {
   width: 180px;
   box-shadow: 0px 0px 30px #6b7784;
   margin-bottom: 30px;
 }
-.sidebar-second .page #block-block-6 {
+.page .sidebar-second #block-block-6,
+.page .sidebar-second #block-views-categories-block,
+.page .sidebar-second #block-views-categories-block-1 {
   margin-bottom: 0;
 }
-.sidebar-second .page .title {
+.page .sidebar-second .title {
   padding: 20px 0px 0 0px;
   margin: 0 20px 0px 20px;
   font-size: 25px;
   color: #6b7784;
   border-bottom: 2px solid #172145;
 }
-.sidebar-second .page .block-content {
+.page .sidebar-second .block-content {
   padding: 20px;
 }
-.sidebar-second .page .block-content h3 {
+.page .sidebar-second .block-content h3 {
   font-size: 18px;
   margin-bottom: 10px;
   font-weight: bold;
 }
-.sidebar-second .page .block-content .hot-feed,
-.sidebar-second .page .block-content .new-feed {
+.page .sidebar-second .block-content .hot-feed,
+.page .sidebar-second .block-content .new-feed {
   border-bottom: 2px dashed #6b7784;
   padding: 20px 0;
 }
-.sidebar-second .page .block-content .feed-1 {
+.page .sidebar-second .block-content .feed-1 {
   padding-top: 0;
 }
-.sidebar-second .page .block-content .feed-3 {
+.page .sidebar-second .block-content .feed-3 {
   border: none;
 }
-.sidebar-second .page .block-content .more {
+.page .sidebar-second .block-content .more {
   font-weight: bold;
 }
 
-/* --- 0. Admin ------------ */
+
+.page .sidebar-second .views-row {
+  margin: 0 30px 30px 30px;
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+.page .sidebar-second .view-header {
+  margin: 30px 30px 30px 30px;
+}
+.page .sidebar-second .view-header p {
+  margin: 0;
+}
+
+/* --- AA. Admin ------------ */
 
 .tabs.primary {
   width: 840px;
   list-style: none;
-  padding: 0;
-  margin: 0 0 25px 0;
   display: block;
+  padding: 0;
+  margin: 10px 0 25px 0;
   overflow: hidden;
   border-bottom: 1px solid #bbb;
   line-height: 25px;
@@ -748,4 +791,105 @@ ul.primary li.active a {
   background-color: #ddd;
   border-bottom: none;
   font-weight: normal;
+}
+.page-user .tabs.primary {
+  padding-top: 40px;
+}
+
+/* --- BB. Breadcrumbs ------------ */
+
+.breadcrumb {
+  margin: 15px 0px 45px 0px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid #d2dae2;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.breadcrumb a {
+  text-decoration: underline;
+}
+.page-about .breadcrumb,
+.page-user .breadcrumb {
+  display: none;
+}
+
+/* --- Forms ---------------*/
+
+form {
+  width: 100%;
+  display: block;
+  clear: both;
+  padding-top: 30px;
+  border-top: 3px dotted #d2dae2;
+}
+form label.required:after {
+  content: " *";
+  color: red;
+}
+form label {
+  display: block;
+  color: #000;
+}
+form input,
+form textarea {
+  border: none;
+  background-color: #f4f5f6;
+}
+form input, form textarea {
+  border: 1px solid #c4d0db;
+  outline: none;
+  padding: 5px 10px;
+  width: 500px;
+}
+form input[type="submit"] {
+  width: 100px;
+  display: block;
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  margin: 30px 0 10px 0;
+  text-align: center;
+  background: #f8f8f8; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f8f8f8 0%, #b4b7c3 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#b4b7c3)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f8f8f8 0%,#b4b7c3 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f8f8f8 0%,#b4b7c3 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f8f8f8 0%,#b4b7c3 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f8f8f8 0%,#b4b7c3 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#b4b7c3',GradientType=0 ); /* IE6-9 */
+  color: #172145;
+  border-radius: 10px;
+  font-weight: bold;
+  text-shadow: 0 1px 1 rgba(0,0,0,.2);
+  box-shadow: 0 1px 0 0 #b4b7c3, 0 -1px 0 0 white;
+  border: 1px solid #e5eaef;
+}
+form input[type="submit"]:hover {
+  text-decoration: underline;
+}
+.form-item .description {
+  margin-top: 6px;
+  color: #777;
+}
+address {
+  margin-left: 0 !important;
+  color: #9f30b6;
+  font-size: 18px;
+  line-height: 28px;
+}
+input[type="radio"], input[type="checkbox"] {
+  vertical-align: middle;
+  display: inline-block;
+  width: 30px;
+}
+.webform-container-inline label {
+  display: inline-block;
+}
+.webform-container-inline div, .webform-container-inline div.form-item {
+  display: block;
+}
+.form-checkboxes label, .form-radios label {
+  display: inline-block;
+}
+.form-checkboxes {
+  margin-top: 12px;
 }
